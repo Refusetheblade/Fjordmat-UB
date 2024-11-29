@@ -4,10 +4,10 @@
 
 
 :root {
-    --color-primary: #0d3c2c;    /* Dark Forest Green */
-    --color-secondary: #43291f;  /* brun */
-    --color-accent: #f4f0bb;     /* gul */
-    --color-background: #f3f7f0; /*hvit*/
+    --color-primary: #0d3c2c;    
+    --color-secondary: #43291f;  
+    --color-accent: #f4f0bb;    
+    --color-background: #f3f7f0; 
     --color-white: #f3f7f0;
   }
   
@@ -110,7 +110,6 @@
         justify-content: center;
         text-align: center;
         color: var(--color-white);
-        margin-top: 4vh;
       }
       
       .hero::before {
@@ -127,6 +126,7 @@
         position: relative;
         max-width: 800px;
         padding: 0 1rem;
+        margin-top: 37.5rem;
       }
       
       .hero h1 {
@@ -215,7 +215,7 @@
     font-size: 0.875rem;
   }
   
-    /* About Section */
+    /* About */
     .about {
         background-color: var(--color-secondary);
         padding: 5rem 0;
@@ -244,7 +244,7 @@
         margin-bottom: 1rem;
       }
       
-      /* Recipes Section */
+      /* Oppskrifter Section */
       .recipes {
         padding: 5rem 0;
         background-color: var(--color-background);
@@ -414,6 +414,48 @@
         border-radius: 0.5rem;
         width: 100%;
       }
+
+      /* Footer */
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 40px 0;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer .footer-content {
+  margin-bottom: 20px;
+}
+
+.footer .footer-content p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer .social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer .social-links a {
+  color: var(--color-accent);
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer .social-links a:hover {
+  color: var(--color-secondary);
+}
+
+.footer .footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--color-accent);
+}
       
       /* Responsive Design */
       @media (max-width: 768px) {
@@ -445,89 +487,37 @@
         }
       }    
 
-      
-      /* Responsiv design */
-@media (max-width: 768px) {
-  /* Navbar */
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-logo {
-    margin-bottom: 1rem;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--color-primary);
-    padding: 1rem;
-    border-radius: 0.5rem;
-  }
-
-  .nav-links a {
-    padding: 0.5rem 0;
-    text-align: left;
-    width: 100%;
-  }
-
-  .mobile-menu-btn {
-    display: block;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .cta-button {
-    padding: 0.75rem 1.5rem;
-  }
-
-  .menu h2 {
-    font-size: 2rem;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .about-content h2 {
-    font-size: 2rem;
-  }
-
-  .recipes h2 {
-    font-size: 2rem;
-  }
-
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .submit-button {
-    padding: 0.75rem;
-  }
-
+@media screen and (max-width: 768px) {
   .contact-grid {
     grid-template-columns: 1fr;
   }
 
-  .map iframe {
-    width: 100%;
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
   }
 
-  .contact-info,
-  .contact-details {
-    text-align: center;
+  .contact-item p {
+    font-size: 1rem;
+  }
+
+  .contact-item i {
+    font-size: 1.25rem; 
+
+  .catering-form {
+    padding: 20px;
+  }
+
+  .catering-form .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .submit-button {
+    width: 100%;
   }
 }

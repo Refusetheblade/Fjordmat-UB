@@ -97,3 +97,35 @@ cateringForm.addEventListener('submit', (event) => {
   cateringForm.reset();
 });
 
+
+//Få oppskrifter fra txt
+document.addEventListener("DOMContentLoaded", () => {
+  const recipesGrid = document.getElementById("recipesGrid");
+  const recipesFile = "assets/data/recipes.txt";
+
+  fetch(recipesFile)
+      .then(response => {
+          if (!response.ok) {
+              throw new Error(`Could not fetch recipes: ${response.statusText}`);
+          }
+          return response.text();
+      })
+      .then(data => {
+          const recipes = data.split('---').map(recipe => recipe.trim());
+          recipes.forEach(recipeText => {
+              const recipeElement = document.createElement("div");
+              recipeElement.classList.add("recipe");
+
+              const [title, ...body] = recipeText.split("\n");
+              recipeElement.innerHTML = `
+                  <h3>${title}</h3>
+                  <p>${body.join("<br>")}</p>
+              `;
+              recipesGrid.appendChild(recipeElement);
+          });
+      })
+      .catch(error => {
+          console.error("Error loading recipes:", error);
+          recipesGrid.innerHTML = "<p>Failed to load recipes. Please try again later.</p>";
+      });
+});

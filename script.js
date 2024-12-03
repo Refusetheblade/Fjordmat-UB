@@ -10,18 +10,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // meny
 const julemiddagItems = [
-  { name: 'Pinnekjøtt', description: 'Tradisjonell norsk rett.', price: '250 NOK' },
-  { name: 'Ribbe', description: 'Saftig ribbe med sprø svor.', price: '300 NOK' },
-  { name: 'Lutefisk', description: 'Serveres med ertestuing og bacon.', price: '280 NOK' },
-  { name: 'Medisterkaker', description: 'Hjemmelaget medisterkaker.', price: '200 NOK' },
-  { name: 'Juletorsk', description: 'Torsk med lever og rogn.', price: '260 NOK' },
-  { name: 'Svinerull', description: 'Salt og krydret svinekjøtt.', price: '220 NOK' },
-  { name: 'Gravet laks', description: 'Laks marinert i dill og sukker.', price: '240 NOK' },
-  { name: 'Kalkun', description: 'Saftig kalkun med stuffing.', price: '320 NOK' },
-  { name: 'Skinkestek', description: 'Langtidsstekt skinke.', price: '280 NOK' },
-  { name: 'Viltgryte', description: 'Gryte med reinsdyr og sopp.', price: '290 NOK' },
-  { name: 'Julepølser', description: 'Smakfulle, hjemmelagde pølser.', price: '190 NOK' },
-  { name: 'Rype', description: 'Tradisjonell viltrett.', price: '350 NOK' },
+  { name: 'Rødkål', description: 'Tradisjonell norsk rett.', price: '150 NOK' },
+  { name: 'Kålrotpuré', description: 'En lekker liten forrett.', price: '150 NOK' },
+  { name: 'Helstekt svineribbe', description: 'Saftig kjøtt og sprø svor.', price: '280 NOK' },
+  { name: 'Pinnekjøtt', description: 'Den vanligste julematen på Vestlandet.', price: '200 NOK' },
+  { name: 'Riskrem', description: 'Riskrem med rød saus er nydelig.', price: '260 NOK' },
+  { name: 'Karamellpudding', description: 'Kanskje Norges mest populære dessert. ', price: '220 NOK' },
+  { name: 'Rødkål', description: 'Tradisjonell norsk rett.', price: '150 NOK' },
+  { name: 'Kålrotpuré', description: 'En lekker liten forrett.', price: '150 NOK' },
+  { name: 'Helstekt svineribbe', description: 'Saftig kjøtt og sprø svor.', price: '280 NOK' },
+  { name: 'Pinnekjøtt', description: 'Den vanligste julematen på Vestlandet.', price: '200 NOK' },
+  { name: 'Riskrem', description: 'Riskrem med rød saus er nydelig.', price: '260 NOK' },
+  { name: 'Karamellpudding', description: 'Kanskje Norges mest populære dessert. ', price: '220 NOK' },
 ];
 
 const julekakerItems = [
@@ -40,8 +40,8 @@ const julekakerItems = [
 ];
 
 const drikkeItems = [
-  { name: 'Gløgg', description: 'Varm krydret drikk.', price: '40 NOK' },
-  { name: 'Julebrus', description: 'Tradisjonell julebrus.', price: '35 NOK' },
+  { name: 'RØD GLØGG ', description: 'Varm god drikke.', price: '40 NOK' },
+  { name: 'HVIT GLØGG ', description: 'Varm god drikke.', price: '35 NOK' },
   { name: 'Akevitt', description: 'En klassisk norsk juledram.', price: '70 NOK' },
   { name: 'Kaffe', description: 'Nykokt svart kaffe.', price: '30 NOK' },
   { name: 'Te', description: 'Varme urteteer.', price: '30 NOK' },
